@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?fspijy');
+  src:  url('fonts/icomoon.eot?fspijy#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fspijy') format('truetype'),
+    url('fonts/icomoon.woff?fspijy') format('woff'),
+    url('fonts/icomoon.svg?fspijy#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu8:before {
+  content: "\e913";
+}
+.icon-menu10:before {
+  content: "\e914";
+}
+.icon-menu9:before {
+  content: "\e915";
+}
+.icon-menu3:before {
+  content: "\e916";
+}
+.icon-menu6:before {
+  content: "\e917";
+}
+.icon-menu11:before {
+  content: "\e918";
+}
+.icon-menu4:before {
+  content: "\e919";
+}
+.icon-menu13:before {
+  content: "\e91a";
+}
+.icon-menu14:before {
+  content: "\e91b";
+}
+.icon-menu12:before {
+  content: "\e91c";
+}
+.icon-menu7:before {
+  content: "\e91d";
+}
+.icon-menu1:before {
+  content: "\e91e";
+}
+.icon-menu2:before {
+  content: "\e91f";
+}
+.icon-menu5:before {
+  content: "\e920";
+}
+.icon-soc1:before {
+  content: "\e900";
+}
+.icon-phone:before {
+  content: "\e901";
+}
+.icon-logIn:before {
+  content: "\e902";
+}
+.icon-reg:before {
+  content: "\e903";
+}
+.icon-info1:before {
+  content: "\e904";
+}
+.icon-info2:before {
+  content: "\e905";
+}
+.icon-info3:before {
+  content: "\e906";
+}
+.icon-info4:before {
+  content: "\e907";
+}
+.icon-adv1:before {
+  content: "\e908";
+}
+.icon-adv2:before {
+  content: "\e909";
+}
+.icon-adv3:before {
+  content: "\e90a";
+}
+.icon-adv4:before {
+  content: "\e90b";
+}
+.icon-adv5:before {
+  content: "\e90c";
+}
+.icon-adv6:before {
+  content: "\e90d";
+}
+.icon-stat1:before {
+  content: "\e90e";
+}
+.icon-stat2:before {
+  content: "\e90f";
+}
+.icon-stat3:before {
+  content: "\e910";
+}
+.icon-stat4:before {
+  content: "\e911";
+}
+.icon-soc2:before {
+  content: "\ea90";
+}
+.icon-soc4:before {
+  content: "\ea96";
+}
+.icon-soc3:before {
+  content: "\ea9d";
+}
+.icon-up:before {
+  content: "\ea3a";
+}
+.icon-down:before {
+  content: "\ea3e";
+}
+.icon-soc5:before {
+  content: "\e912";
+}
