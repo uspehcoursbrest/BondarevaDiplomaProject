@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -37,7 +39,7 @@ a {
     -moz-transition: color 0.2s 0.02s ease;
     -o-transition: color 0.2s 0.02s ease;
     -webkit-transition: color 0.2s 0.02s ease;
-    color:#222;
+    color: #222;
 }
 
 a:hover {
@@ -127,7 +129,20 @@ header .languages .lang {
 }
 
 .logo {
+    position: relative;
     width: 200px;
+    padding-left: 94px;
+}
+
+.logo img {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -31px;
+}
+
+.logo span {
+    text-transform: unset !important;
 }
 
 .invistLink {
@@ -314,6 +329,14 @@ header .logo {
     transition: all 0.3s;
 }
 
+.planList input:disabled + label span {
+    color: #474a4d;
+}
+
+.planList input:disabled + label span:last-child {
+    color: #b6768d;
+}
+
 .sum {
     text-align: right;
     padding-right: 70px;
@@ -364,10 +387,14 @@ header .logo {
     color: #a8a8a8;
     text-transform: uppercase;
     position: relative;
-    padding-left: 8px;
-    margin-left: -8px;
+    padding-left: 31px;
     font-size: 25px;
     color: #a8a8a8;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .radioBtn {
@@ -378,11 +405,13 @@ header .logo {
     content: " ";
     display: block;
     position: absolute;
-    top: 0;
+    top: 50%;
+    margin-top: -13px;
     left: 0;
     width: 25px;
     height: 25px;
     border: 2px solid #616669;
+    border-radius: 50%;
     transition: all 0.3s;
 }
 
@@ -390,20 +419,22 @@ header .logo {
     content: " ";
     display: block;
     position: absolute;
-    top: 7px;
-    left: 7px;
-    width: 12px;
-    height: 12px;
-    border: 2px solid #a8a8a8;
+    top: 50%;
+    margin-top: -7px;
+    left: 6px;
+    width: 13px;
+    height: 13px;
+    background-color: #a8a8a8;
+    border-radius: 50%;
     transition: all 0.3s;
 }
 
-.radioBtn:not(checked) + label::before {
-    border-color: #a8a8a8;
+.radioBtn:checked + label::after {
+    background-color: #ba3261;
 }
 
-.radioBtn:not(checked) + label::after {
-    opacity: 1;
+.radioBtn:checked + label {
+    color: #fff;
 }
 
 .radioBtn + label {
@@ -560,11 +591,21 @@ header .logo {
 
 .program {
     display: block;
+    padding: 110px 0px 100px;
 }
 
-.program  img {
-    display: block;
-    padding-top: 150px;
+.programWrap {
+    background-position: center 25px;
+    background-repeat: no-repeat;
+
+}
+
+.program .levelList {
+    padding-left: 25px;
+}
+
+.program .levelList li + li {
+    margin-left: 12px;
 }
 
 .program .levelList span {
@@ -572,18 +613,65 @@ header .logo {
     line-height: 25px;
     font-weight: bold;
     color: #73b6cc;
-    margin: 20px;
 }
 
 .program .levelList span + span {
+    position: relative;
+    display: inline-block;
+    padding: 0px 17px;
     font-size: 12px;
-    line-height: 25px;
-    font-weight: 300;
+    line-height: 27px;
+    font-weight: bold;
     color: #ffffff;
-    display: block;
+    background-color: #a5345c;
 }
 
-.programDescr span{
+.program .levelList span + span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-top: 27px solid #a5345c;
+    border-left: 9px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;;
+    transition: all 0.3s;
+}
+
+.program .levelList span + span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 9px solid transparent;
+    border-bottom: 27px solid #a5345c;
+    transition: all 0.3s;
+}
+
+.programDescr {
+    padding-left: 65px;
+    padding-right: 70px;
+    padding-top: 45px;
+    padding-bottom: 27px;
+}
+
+.programDescr .name {
+    float: left;
+}
+
+.programDescr .content {
+    float: right;
+}
+
+.programDescr span {
     font-size: 42px;
     line-height: 48px;
     font-weight: bold;
@@ -612,7 +700,7 @@ header .logo {
     display: block;
 }
 
-.content span {
+.programDescr .content span {
     font-size: 24px;
     line-height: 22px;
     font-weight: 300;
@@ -624,6 +712,27 @@ header .logo {
 
 .btnFillColor2 {
     display: block;
+    margin-left: auto;
+    margin-right: 80px;
+    margin-right: 80px;
+}
+
+.program .btnFillColor2 {
+    width: 263px;
+    position: relative;
+}
+
+.program .btnFillColor2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 0;
+    height: 0;
+    border-top: 55px solid #73b6cc;
+    border-left: 22px solid transparent;
+    border-right: 0px solid transparent;
 }
 
 .steps h2 {
@@ -636,25 +745,108 @@ header .logo {
     margin-top: 120px;
 }
 
-.steps span {
+.steps .item {
+    position: relative;
+}
+
+.steps .number {
+    position: absolute;
+}
+
+.steps .content {
+    position: relative;
+    width: 890px;
+    margin: 0px auto;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+.steps .number {
     font-size: 77px;
     line-height: 62px;
     font-weight: bold;
     color: #73b6cc;
     text-align: right;
-    padding-top: 90px;
 }
 
-.steps .content span  {
+.steps .content .title {
     font-size: 17px;
     line-height: 25px;
     font-weight: bold;
     color: #54565a;
     text-transform: uppercase;
     text-align: left;
-    padding-top: 90px;
-    background-color: #f2f2f2;
-    margin-left: 90px;
+    display: block;
+    width: 235px;
+}
+
+.steps .item + .item {
+    margin-top: 20px;
+}
+
+.steps .item:nth-child(odd) .content .title {
+    float: left;
+}
+
+.steps .item:nth-child(even) .content .title {
+    float: right;
+    text-align: right;
+}
+
+.steps .item:nth-child(odd) .number {
+    top: 0px;
+    left: 0px
+}
+
+.steps .item:nth-child(even) .number {
+    top: 0px;
+    right: 0px
+}
+
+.steps .item .content a {
+    color: #a5345c;
+    font-weight: bold;
+}
+
+.steps .content::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 38px;
+    width: 35px;
+    height: 25px;
+    background-color: #a5345c;
+}
+
+.steps .item:nth-child(odd) .content::before {
+    left: -21px;
+}
+
+.steps .item:nth-child(even) .content::before {
+    right: -21px;
+}
+
+.steps .content::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 38px;
+    width: 0px;
+    height: 0px;
+    border-top: 25px solid #a5345c;
+    /*background-color: #a5345c;*/
+}
+
+.steps .item:nth-child(odd) .content::after {
+    right: calc(100% + 21px);
+    border-left: 9px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.steps .item:nth-child(even) .content::after {
+    left: calc(100% + 21px);
+    border-right: 9px solid transparent;
+    border-left: 0px solid transparent;
 }
 
 .steps .content p {
@@ -663,13 +855,59 @@ header .logo {
     font-weight: 300;
     color: #54565a;
     text-align: left;
-    padding-top: 90px;
-    background-color: #f2f2f2;
 }
 
 .companyInfo {
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #f2f2f2;
+}
+
+.companyInfo .tabs {
+    position: relative;
+    top: -54px;
+}
+
+.companyInfo .tabs li {
+    position: relative;
+}
+
+.companyInfo .tabs li.active {
+    background-color: #f2f2f2;
+}
+
+.companyInfo .tabs li.active a {
+    color: #212428;
+}
+
+.companyInfo .tabs li.active::before {
+    border-bottom: 54px solid #f2f2f2 !important;
+}
+
+.companyInfo .tabs li:first-child::before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 100%;
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 54px solid #73b6cc;
+    border-left: 20px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.companyInfo .tabs li:last-child::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 100%;
+    bottom: 0px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 54px solid #73b6cc;
+    border-right: 20px solid transparent;
+    border-left: 0px solid transparent;
 }
 
 .companyInfo .left,
@@ -713,7 +951,6 @@ header .logo {
 
 .tabContent {
     padding-top: 115px;
-    background-color: #f2f2f2;
 }
 
 .tabContent .item {
@@ -789,29 +1026,49 @@ header .logo {
     text-decoration: none;
 }
 
-.statistic .item {
-    width: 25%;
-    height: 360px;
-    float: left;
+.statistic {
+    padding: 105px 0px 110px;
 }
 
-.statistic span:first-child  {
+.statistic .wrapper {
+    position: relative;
+}
+
+.statistic .wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 1171px;
+    height: 205px;
+    background-image: url(../img/png/border1.png);
+}
+
+.statistic .item {
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.statistic span:first-child {
     font-size: 55px;
     line-height: 55px;
     color: #72b5cb;
     text-align: center;
     text-decoration: none;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
+    display: block;
 }
 
-.statistic span:last-child  {
+.statistic span:last-child {
     font-size: 33px;
     line-height: 46px;
-    font-weight: 300;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    display: block;
 }
 
 .statistic span {
@@ -830,10 +1087,13 @@ header .logo {
     display: block;
 }
 
+.advantages {
+    background-color: #f2f2f2;
+}
 .advantages .item {
     width: 33.3333%;
     float: left;
-    background-color: #f2f2f2;
+    margin-top: 75px;
 }
 
 .advantages h2 {
@@ -846,14 +1106,18 @@ header .logo {
     text-align: center;
 }
 
-.advantages p {
+.advantages h2 + p {
     font-size: 15px;
     line-height: 22px;
     color: #212428;
     text-align: center;
 }
-
-.advantages .item  span {
+.advantages .item .title {
+    position: relative;
+    padding-left: 80px;
+    
+}
+.advantages .item span {
     font-family: "Gotham Pro";
     font-weight: bold;
     font-size: 17px;
@@ -863,36 +1127,50 @@ header .logo {
     text-align: right;
 }
 
-.advantages .item  [class*="icon-adv"] {
-    color: #73b6cc;
-    font-size: 60px;
-    position: absolute;
+.advantages .item {
+    text-align: left;
 }
 
-.advantages .item  p {
-    font-family: "Gotham Pro";
+.advantages .item [class*="icon"] {
+    color: #fff;
+    font-size: 40px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    font-weight: normal;
+    top: 50%;
+    margin-top: -30px;
+    left: 0px;
+    background-image: url(../img/png/icon_back.png);
+}
+
+.advantages .item p {
     font-size: 15px;
     line-height: 22px;
-    color: #a5345c;
-    text-align-last: left;
+    color: #54565a;
+    margin-top: 35px;
 }
 
-.payments .border {
-    position: absolute;
-    padding-top: 100px
+
+.payments {
+    padding: 97px 0px 91px;
 }
 
-.payments .border {
+
+.payments ul {
     display: table;
-    width: 1170px;
-    height: 195px;
+    width: 100%;
+    height: 145px;
 }
 
 .payments li {
     position: relative;
-    display: inline-block;
-    margin-left: 85px;
-    padding-top: 140px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    /*margin-left: 85px;*/
+    /*padding-top: 140px;*/
 }
 
 .map {
@@ -910,8 +1188,23 @@ header .logo {
 }
 
 .certificate {
+    position: relative;
     display: inline-block;
-    padding-top: 100px;
+    vertical-align: top;
+}
+.certificate::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: -27px;
+    width: 248px;
+    height: 206px;
+    background-image: url(../img/png/border3.png);
+}
+
+footer {
+    padding: 100px 0px;background-color: #212428;
 }
 
 .footBlock {
@@ -920,10 +1213,19 @@ header .logo {
 
 .footInfo {
     display: inline-block;
+    margin-left: 45px;
+    width: 320px;
+    vertical-align: top;
+}
+
+.footInfo + .footMenu {
+    margin-left: 45px;
 }
 
 .footMenu {
+    margin-left: 80px;
     display: inline-block;
+    vertical-align: top;
 }
 
 .footMenu .logo {
@@ -944,7 +1246,6 @@ header .logo {
 
 .footInfo span {
     display: block;
-    float: left;
 }
 
 .footInfo span {
@@ -956,21 +1257,26 @@ header .logo {
     color: #ffffff;
 }
 
+.companyAddress {
+    margin-top: 35px;
+}
+
 .companyAddress span {
     display: block;
-    float: left;
     font-size: 14px;
     line-height: 22px;
-    color: #bdbdbd;
-    margin-left: 60px;
+    color: #fff;
 }
 
 .companyAddress p {
     display: block;
-    float: left;
     font-size: 14px;
     line-height: 22px;
     color: #bdbdbd;
+}
+
+.companyNumber {
+    margin-top: 30px;
 }
 
 .companyNumber span {
@@ -980,12 +1286,8 @@ header .logo {
     line-height: 30px;
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: bold;
     width: 260px;
-}
-
-.companyNumber p {
-    padding-top: 100px;
 }
 
 .companyNumber p {
@@ -996,21 +1298,19 @@ header .logo {
 }
 
 .companyNumber a {
-    padding-top: 100px;
-}
-
-.companyNumber a {
+    margin-top: 30px;
+    display: inline-block;
     width: 240px;
     height: 40px;
-    line-height: 15px;
+    line-height: 40px;
     font-weight: 300;
+    text-align: center;
     color: #73b6cc;
     border: 1px solid #73b6cc;
 }
 
 .menuList span {
     display: block;
-    float: left;
 }
 
 .menuList span {
@@ -1018,6 +1318,14 @@ header .logo {
     line-height: 25px;
     color: #ffffff;
     text-transform: uppercase;
+}
+
+.menuList ul {
+    margin-top: 30px;
+}
+
+.menuList + .menuList {
+    margin-top: 30px;
 }
 
 .menuList li a {
@@ -1072,6 +1380,7 @@ header .logo {
 .cabWrapper .right {
     width: calc(100% - 360px);
     float: right;
+    background-color: #f2f2f2;
 }
 
 .right .cabHeader {
@@ -1228,13 +1537,13 @@ cabHeader .clock .weekday {
     background-color: #f2f2f2;
 }
 
-.balance .item  {
+.balance .item {
     width: 50%;
     float: right;
     background-color: #f2f2f2;
 }
 
-.balance .item  {
+.balance .item {
     font-size: 17px;
     line-height: 27px;
     color: #a5345c;
@@ -1264,7 +1573,7 @@ cabHeader .clock .weekday {
     margin: 8px;
 }
 
-.btnFillColor1  {
+.btnFillColor1 {
     font-size: 14px;
     line-height: 40px;
     font-weight: 300;
@@ -1277,13 +1586,22 @@ cabHeader .clock .weekday {
 }
 
 cabStat ul {
-    display: table;
-    width: 100%;
+    margin: -10px -20px 0px;
+    /*display: table;*/
+    /*width: 100%;*/
 }
 
 .cabStat li {
-    display: table-row;
+    padding: 10px 20px 0px;
+    float: left;
+    width: 33.3333%;
+}
+
+.cabStat li .inner {
+    display: table;
+    padding: 0px 30px;
     height: 60px;
+    background-color: #fff;
 }
 
 .cabStat li span {
@@ -1293,11 +1611,33 @@ cabStat ul {
     padding-left: auto;
     color: #a5345c;
     font-weight: bold;
-    border: 1px solid #ffffff;
-    background-color: #f2f2f2;
 }
 
-.cabStat li span + span  {
+.cabStat li span:first-child {
+    text-align: left;
+}
+
+.cabStat li span:last-child {
+    text-align: right;
+}
+
+.cabStat li span + span {
     color: #63a6bc;
     font-weight: bold;
+}
+
+.balance .item {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.balance ul li {
+    display: inline-block;
+}
+.balance ul li + li {
+    margin-left: 10px;
+}
+
+.balance ul li span {
+    display: block;
 }
