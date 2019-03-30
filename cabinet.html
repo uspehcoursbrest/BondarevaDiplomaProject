@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="fonts/icomoon/style.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <div class="cabWrapper clear">
@@ -38,12 +39,18 @@
   </div>
   <div class="right">
     <div class="cabHeader">
-      <div class="clock">
-        <img src="img/png/Clock.png" alt="">
-        <span class="icon"></span>
-        <span class="time">16:23:50</span>
-        <span class="date">20 января 2018</span>
-        <span class="weekday" id="weekday">Пятница</span>
+      <!--<div class="clock">-->
+        <!--<img src="img/png/Clock.png" alt="">-->
+        <!--<span class="icon"></span>-->
+        <!--<span class="time">16:23:50</span>-->
+        <!--<span class="date">20 января 2018</span>-->
+        <!--<span class="weekday" id="weekday">Пятница</span>-->
+        <div class="item clock clear">
+          <img src="img/png/Clock.png" alt="">
+          <span class="iconLeft"></span>
+          <span class="time" id="time">16:23:50</span>
+          <span class="date" id="date">20 января 2018</span>
+          <span class="weekday" id="weekday">Пятница</span>
       </div>
       <div class="languages">
         <span class="img"></span>
