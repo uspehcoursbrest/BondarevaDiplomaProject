@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кабинет</title>
+
   <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <div class="cabWrapper clear">
   <div class="left">
-    <div class="logo">
-      <img src="" alt="">
+    <div class="logo invistLink">
+      <a href="#">Главная</a>
+      <img src="img/png/Logo.png" alt="">
       <span>Trade Finance</span>
     </div>
     <ul class="cabMenu">
@@ -34,188 +38,205 @@
       <li><a href=""><span class="icon-menu14"></span>Выход</a>
     </ul>
     <div class="copyright">
-      <p>© 2018 Trade Finance. Все права защищены.</p>
+      <p>© 2018 <span>Trade Finance</span>. Все права защищены.</p>
     </div>
   </div>
   <div class="right">
     <div class="cabHeader">
-      <!--<div class="clock">-->
-        <!--<img src="img/png/Clock.png" alt="">-->
-        <!--<span class="icon"></span>-->
-        <!--<span class="time">16:23:50</span>-->
-        <!--<span class="date">20 января 2018</span>-->
-        <!--<span class="weekday" id="weekday">Пятница</span>-->
-        <div class="item clock clear">
-          <img src="img/png/Clock.png" alt="">
-          <span class="iconLeft"></span>
-          <span class="time" id="time">16:23:50</span>
-          <span class="date" id="date">20 января 2018</span>
-          <span class="weekday" id="weekday">Пятница</span>
+      <header>
+        <div class="wrapper">
+          <div class="item clock clear">
+            <img src="img/png/Clock.png" alt="">
+            <span class="iconLeft"></span>
+            <span class="time" id="time">16:23:50</span>
+            <div>
+              <span class="date" id="date">20 января 2018</span>
+              <span class="weekday" id="weekday">Пятница</span>
+            </div>
+          </div>
+          <div class="languages">
+            <span class="img">
+              <img src="img/png/flag.png" alt="">
+            </span>
+            <span class="lang">RU</span>
+            <span class="arr"></span>
+          </div>
+          <ul class="socLinks">
+            <li><a href="#" class="icon-soc2"></a></li>
+            <li><a href="#" class="icon-soc3"></a></li>
+            <li><a href="#" class="icon-soc4"></a></li>
+            <li><a href="#" class="icon-soc5"></a></li>
+          </ul>
+          <div class="headCont">
+            <a href="#" class="icon-soc1"></a>
+            <a href="#"><span class="icon-phone"></span> + 8 800 123 -45-65</a>
+          </div>
+          <div class="userBlock">
+            <div class="img">
+              <img src="img/png/user.png" alt="">
+            </div>
+            <div class="txt">
+              <span>Добро пожаловать,</span>
+              <span><b>Ivanovskiy4590</b></span>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="cabContent">
+      <div class="refLink clear">
+        <span class="icon-link"></span>
+        <span><b>Ваша реферальная ссылка</b></span>
+        <a href="#">http://trade-finance.cc/?ref=358689870898</a>
+        <button class="btnBorder">копировать</button>
       </div>
-      <div class="languages">
-        <span class="img"></span>
-        <img src="img/png/flag.png" alt="">
-        <span class="lang">RU</span>
-        <span class="arr"></span>
+      <div class="balance clear">
+        <div class="item">
+          <div class="inner" style="background-image: url(img/png/fon01_2page.png);">
+            <span class="title">Счет для пополнения</span>
+            <ul>
+              <li>
+                <span>RUB</span>
+                <span>120000</span>
+              </li>
+              <li>
+                <span>USD</span>
+                <span>2390</span>
+              </li>
+              <li>
+                <span>EUR</span>
+                <span>0.00</span>
+              </li>
+              <li>
+                <span>KZT</span>
+                <span>4500</span>
+              </li>
+              <li>
+                <span>UAH</span>
+                <span>4399</span>
+              </li>
+              <li>
+                <span>BTC</span>
+                <span>1.00038</span>
+              </li>
+              <li>
+                <span>ETH</span>
+                <span>23.050</span>
+              </li>
+            </ul>
+            <a href="#" class="btnFillColor1">Пополнить</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="inner" style="background-image: url(img/png/fon_2page.png);">
+            <span class="title">Счет для вывода средств</span>
+            <ul>
+              <li>
+                <span>RUB</span>
+                <span>78000</span>
+              </li>
+              <li>
+                <span>USD</span>
+                <span>2390</span>
+              </li>
+              <li>
+                <span>EUR</span>
+                <span>0.00</span>
+              </li>
+              <li>
+                <span>KZT</span>
+                <span>4500</span>
+              </li>
+              <li>
+                <span>UAH</span>
+                <span>0.00</span>
+              </li>
+              <li>
+                <span>BTC</span>
+                <span>0.00</span>
+              </li>
+              <li>
+                <span>ETH</span>
+                <span>0.00</span>
+              </li>
+            </ul>
+            <a href="" class="btnFillColor2">Вывести</a></div>
+        </div>
       </div>
-      <ul class="socLinks">
-        <li><a href="#" class="icon-soc2"></a></li>
-        <li><a href="#" class="icon-soc3"></a></li>
-        <li><a href="#" class="icon-soc4"></a></li>
-        <li><a href="#" class="icon-soc5"></a></li>
-      </ul>
-      <div class="headCont">
-        <a href="#" class="icon-soc1"></a>
-        <a href="#"><span class="icon-phone"></span> + 8 800 123 -45-65</a>
+      <div class="cabStat">
+        <span class="title"><b>События за последние 24 часа</b></span>
+        <div class="wrapper">
+          <ul class="clear">
+            <li>
+              <div class="inner">
+                <span>Начислено по депозитам</span>
+                <span>230$</span>
+              </div>
+            </li>
+            <li>
+              <div class="inner">
+                <span>Начислено по реферальной программе</span>
+                <span>159$</span>
+              </div>
+            </li>
+            <li>
+              <div class="inner">
+                <span>Кол-во переходов по реферальной ссылке</span>
+                <span>1562</span>
+              </div>
+            </li>
+            <li>
+              <div class="inner">
+                <span>Кол-во зарегистрированных партнеров</span>
+                <span>159</span>
+              </div>
+            </li>
+            <li>
+              <div class="inner">
+                <span>Из них с депозитами</span>
+                <span>93</span>
+              </div>
+            </li>
+            <li>
+              <div class="inner">
+                <span>Инвестировано структурой</span>
+                <span>207803$</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="userBlock">
-        <div class="img"></div>
-        <img src="img/png/user.png" alt="">
+      <div class="cabNews">
+        <span class="title"><b>Последние новости</b></span>
+        <div class="wrapper clear">
+          <div class="item">
+            <div class="in">
+              <span class="date"><span class="icon-calendar"></span>22.02.2018 в 15:40</span>
+              <a href="" class="newsTitle"><b>Пополнения и выводы на сайте</b></a>
+              <p>Многие программы электронной вёрстки и редакторы HTML используют...</p>
+              <a href="#" class="btnBorder">подробнее</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="in">
+              <span class="date"><span class="icon-calendar"></span>22.02.2018 в 15:40</span>
+              <a href="" class="newsTitle"><b>Пополнения и выводы на сайте</b></a>
+              <p>Многие программы электронной вёрстки и редакторы HTML используют...</p>
+              <a href="#" class="btnBorder">подробнее</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="in">
+              <span class="date"><span class="icon-calendar"></span>22.02.2018 в 15:40</span>
+              <a href="" class="newsTitle"><b>Пополнения и выводы на сайте</b></a>
+              <p>Многие программы электронной вёрстки и редакторы HTML используют...</p>
+              <a href="#" class="btnBorder">подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div class="txt">
-          <span>Добро пожаловать,</span>
-          <span><b>Ivanovskiy4590</b></span>
-        </div>
-      </div>
-    </div>
-    <div class="refLink">
-      <span class="icon"></span>
-      <span><b>Ваша реферальная ссылка</b></span>
-      <a href="#">http://trade-finance.cc/?ref=358689870898</a>
-      <button class="btnBorder">копировать</button>
-    </div>
-    <div class="balance clear">
-      <div class="item" style="background-image: url(img/png/fon01_2page.png);">
-        <span class="title">Счет для пополнения</span>
-        <ul>
-          <li>
-            <span>RUB</span>
-            <span>120000</span>
-          </li>
-          <li>
-            <span>USD</span>
-            <span>2390</span>
-          </li>
-          <li>
-            <span>EUR</span>
-            <span>.00</span>
-          </li>
-          <li>
-            <span>KZT</span>
-            <span>4500</span>
-          </li>
-          <li>
-            <span>UAH</span>
-            <span>4399</span>
-          </li>
-          <li>
-            <span>BTC</span>
-            <span>1.00038</span>
-          </li>
-          <li>
-            <span>ETH</span>
-            <span>23.050</span>
-          </li>
-        </ul>
-        <a href="btnFillColor1">Пополнить</a></div>
-      <div class="item" style="background-image: url(img/png/fon_2page.png);">
-        <span class="title">Счет для вывода средств</span>
-        <ul>
-          <li>
-            <span>RUB</span>
-            <span>78000</span>
-          </li>
-          <li>
-            <span>USD</span>
-            <span>2390</span>
-          </li>
-          <li>
-            <span>EUR</span>
-            <span>0.00</span>
-          </li>
-          <li>
-            <span>KZT</span>
-            <span>.0</span>
-          </li>
-          <li>
-            <span>UAH</span>
-            <span>0.00</span>
-          </li>
-          <li>
-            <span>BTC</span>
-            <span>0.00</span>
-          </li>
-          <li>
-            <span>ETH</span>
-            <span>0.00</span>
-          </li>
-        </ul>
-        <a href="" class="btnFillColor2">Вывести</a></div>
-    </div>
-    <div class="cabStat">
-      <span class="title"><b>События за последние 24 часа</b></span>
-      <ul class="clear">
-        <li>
-          <div class="inner">
-            <span>Начислено по депозитам</span>
-            <span>230$</span>
-          </div>
-        </li>
-        <li>
-          <div class="inner">
-            <span>Начислено по реферальной программе</span>
-            <span>159$</span>
-          </div>
-        </li>
-        <li>
-          <div class="inner">
-            <span>Кол-во переходов по реферальной ссылке</span>
-            <span>1562</span>
-          </div>
-        </li>
-        <li>
-          <div class="inner">
-            <span>Кол-во зарегистрированных партнеров</span>
-            <span>159</span>
-          </div>
-        </li>
-        <li>
-          <div class="inner">
-            <span>Из них с депозитами</span>
-            <span>93</span>
-          </div>
-        </li>
-        <li>
-          <div class="inner">
-            <span>Инвестировано структурой</span>
-            <span>207803$</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="cabNews">
-      <span class="title"><b>Последние новости</b></span>
-      <div class="wrapper">
-        <div class="item">
-          <span class="date">22.02.2018 в 15:40</span>
-          <a href="" class="newsTitle"><b>Пополнения и выводы на сайте</b></a>
-          <p>Многие программы электронной вёрстки и редакторы HTML используют...</p>
-          <a href="#" class="btnBorder">подробнее</a>
-        </div>
-        <div class="item">
-          <span class="date">22.02.2018 в 15:40</span>
-          <a href="" class="newsTitle"><b>Пополнения и выводы на сайте</b></a>
-          <p>Многие программы электронной вёрстки и редакторы HTML используют...</p>
-          <a href="#" class="btnBorder">подробнее</a>
-        </div>
-        <div class="item">
-          <span class="date">22.02.2018 в 15:40</span>
-          <a href="" class="newsTitle"><b>Пополнения и выводы на сайте</b></a>
-          <p>Многие программы электронной вёрстки и редакторы HTML используют...</p>
-          <a href="#" class="btnBorder">подробнее</a>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 </body>

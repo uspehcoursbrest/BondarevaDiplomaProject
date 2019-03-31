@@ -2,11 +2,14 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная</title>
+
   <link rel="stylesheet" href="fonts/stylesheet.css">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </head>
@@ -18,8 +21,10 @@
         <img src="img/png/Clock.png" alt="">
         <span class="iconLeft"></span>
         <span class="time" id="time">16:23:50</span>
-        <span class="date" id="date">20 января 2018</span>
-        <span class="weekday" id="weekday">Пятница</span>
+        <div>
+          <span class="date" id="date">20 января 2018</span>
+          <span class="weekday" id="weekday">Пятница</span>
+        </div>
       </div>
       <div class="languages">
         <span class="img"></span>
@@ -44,7 +49,6 @@
   <div class="container">
     <div class="topLine clear">
       <div class="logo invistLink">
-        <span class="icon-logo"></span>
         <a href="#">Главная</a>
         <img src="img/png/Logo.png" alt="">
         <span>Trade Finance</span>
@@ -231,28 +235,28 @@
       <div class="left">
         <div class="item">
           <span class="icon-info1"></span>
-          <p><span>Trade Finance</span> разработал для своих<br> клиентов ряд оптимальных<br> инвестиционных
-            стратегий, которые<br> позволяют инвестировать средства в<br> перспективе для получения<br>
+          <p><span>Trade Finance</span> разработал для своих клиентов ряд оптимальных инвестиционных
+            стратегий, которые позволяют инвестировать средства в перспективе для получения
             максимальной выгоды</p>
         </div>
         <div class="item">
           <span class="icon-info2"></span>
-          <p><span>Деятельность компании</span> связана с<br> торговлей валютными парами на<br> рынке Форекс,
-            торговлей<br> криптовалютой, покупкой и продажей<br> акций эмитентов на фондовые<br> индексы и
+          <p><span>Деятельность компании</span> связана с торговлей валютными парами на рынке Форекс,
+            торговлей криптовалютой, покупкой и продажей акций эмитентов на фондовые индексы и
             сырьевые активы.</p>
         </div>
       </div>
       <div class="right">
         <div class="item">
           <span class="icon-info3"></span>
-          <p><span>Сотрудничая</span> с крупнейшими<br> мировыми брокерами, мы можем с<br> уверенностью
-            предложить вам<br> надежный способ инвестирования<br> средств в доверительное управление<br>
+          <p><span>Сотрудничая</span> с крупнейшими мировыми брокерами, мы можем с уверенностью
+            предложить вам надежный способ инвестирования средств в доверительное управление
             Performance capital.</p>
         </div>
         <div class="item">
           <span class="icon-info4"></span>
-          <p><span>Наша цель</span> – увеличение оборотных<br> активов за счет привлечения<br> широкого круга
-            инвесторов. Управляя<br> не только своими активами, но и<br> привлекая инвестиции со стороны, мы<br>
+          <p><span>Наша цель</span> – увеличение оборотных активов за счет привлечения широкого круга
+            инвесторов. Управляя не только своими активами, но и привлекая инвестиции со стороны, мы
             увеличиваем общую прибыль.</p>
         </div>
       </div>
@@ -329,27 +333,34 @@
     <div class="wrapper">
       <div class="item">
         <span class="number">01</span>
-        <div class="content clear">
-          <span class="title">Зарегистрируйте <br>аккаунт</span>
-          <p>На нашем сайте имеется удобная <a href="">форма регистрации</a>, состоящая из<br> нескольких
-            простых полей. При регистрации действуют специальные<br> технологии, которые будут
-            исправлять любую вашу ошибку</p>
+        <div class="content">
+          <div class="clear">
+            <span class="title">Зарегистрируйте <br>аккаунт</span>
+            <p>На нашем сайте имеется удобная <a href="">форма регистрации</a>, состоящая из<br> нескольких
+              простых полей. При регистрации действуют специальные<br> технологии, которые будут
+              исправлять любую вашу ошибку</p>
+          </div>
         </div>
       </div>
       <div class="item">
         <span class="number">02</span>
-        <div class="content clear">
-          <span class="title">Выберите <br>инвестиционный <br>план</span>
-          <p>Оказавшись в бек-офисе, проанализируйте список <a href="">инвестиционных планов</a> и
-            решите, в какой из них вы хотите инвестировать</p>
+        <div class="content">
+          <div class="clear">
+            <span class="title">Выберите <br>инвестиционный <br>план</span>
+            <p>Оказавшись в бек-офисе, проанализируйте список <a href="">инвестиционных планов</a> и
+              решите, в какой из них вы хотите инвестировать</p>
+          </div>
         </div>
       </div>
       <div class="item">
         <span class="number">03</span>
-        <div class="content clear">
-          <span class="title">Пополните счет и<br> купите выбранный<br> план</span>
-          <p>Пополнить счет в нашей компании вы можете с помощью <a href="">банковского<br> перевода</a>
-            или представленных<a href="">электронных платежных систем</a></p></div>
+        <div class="content">
+          <div class="clear">
+            <span class="title">Пополните счет и<br> купите выбранный<br> план</span>
+            <p>Пополнить счет в нашей компании вы можете с помощью <a href="">банковского<br> перевода</a>
+              или представленных<a href="">электронных платежных систем</a></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -429,8 +440,8 @@
           <span>Набор рекламных<br> инструментов</span>
         </div>
         <p>Наши клиенты могут принимать участие в агентской программе <b>Trade Finance,</b>используя
-        специально разработанные для них рекламные инструменты. Благодаря богатому выбору
-        инструментов продвигать бренд стало очень просто и прибыльно.</p>
+          специально разработанные для них рекламные инструменты. Благодаря богатому выбору
+          инструментов продвигать бренд стало очень просто и прибыльно.</p>
       </div>
       <div class="item">
         <div class="title">

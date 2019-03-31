@@ -8,7 +8,7 @@ window.onload = function () {
             hour = date.getHours(),
             min = date.getUTCMinutes(),
             weekday = date.getDay(),
-            weekdayArr = ["Воск", "Пон","Втор", "Сред", "Четв", "Пят", "Субб"];
+            weekdayArr = ["Воскресенье", "Пон","Втор", "Сред", "Четв", "Пят", "Субб"];
 
         if (day < 10) day = "0" + day;
         if (hour < 10) hour = "0" + hour;
