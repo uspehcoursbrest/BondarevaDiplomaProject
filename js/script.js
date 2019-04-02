@@ -8,7 +8,7 @@ window.onload = function () {
             hour = date.getHours(),
             min = date.getUTCMinutes(),
             weekday = date.getDay(),
-            weekdayArr = ["Воскресенье", "Пон","Втор", "Сред", "Четв", "Пят", "Субб"];
+            weekdayArr = ["Воскресенье", "Пон", "Втор", "Сред", "Четв", "Пят", "Субб"];
 
         if (day < 10) day = "0" + day;
         if (hour < 10) hour = "0" + hour;
@@ -18,11 +18,34 @@ window.onload = function () {
         document.getElementById("time").innerHTML = hour + ":" + min;
         document.getElementById("weekday").innerHTML = weekdayArr[weekday];
     }
+
     var timer;
 
     function clockStart() {
         timer = setInterval(clock, 1000);
         clock();
     }
+
     clockStart();
 }
+
+
+$(document).ready(function () {
+    var btnUp = $('.up');
+    btnUp.hide();
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            btnUp.fadeIn();
+        }
+        else {
+            btnUp.fadeOut();
+        }
+    });
+    btnUp.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    })
+})
