@@ -1452,12 +1452,11 @@ footer {
     left: 10px;
     bottom: 20px;
     font-size: 20px;
-    height: 60px;
-    width: 80px;
-    border-radius: 50%;
+    height: 40px;
+    width: 110px;
     text-decoration: none;
-    border: 1px solid rgb(234, 142, 10);
-    color: #73b6cc;
+    border: 1px solid #ffffff;
+    color: #ffffff;
     outline: none;
     background-color: #a5345c;
 }
