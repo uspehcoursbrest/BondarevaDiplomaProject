@@ -1928,3 +1928,88 @@ cabHeader .clock .weekday {
     display: block;
 }
 
+/*.range .irs-line {*/
+/*    height: 21px;*/
+/*    -webkit-border-radius: 11px;*/
+/*    -moz-border-radius: 11px;*/
+/*    border-radius: 11px;*/
+/*    background-color: #fff;*/
+/*    -webkit-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);*/
+/*    -moz-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);*/
+/*    box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);*/
+/*}*/
+
+/*.range .irs-bar {*/
+/*    height: 21px;*/
+/*    background-color: #44d29d;*/
+/*    -webkit-border-radius: 11px;*/
+/*    -moz-border-radius: 11px;*/
+/*    border-radius: 11px;*/
+/*}*/
+
+/*.range .irs-bar-edge {*/
+/*    height: 21px;*/
+/*    width: 35px;*/
+/*    background-color: #44d29d;*/
+/*    -webkit-border-top-left-radius: 11px;*/
+/*    -moz-border-radius-topleft: 11px;*/
+/*    border-top-left-radius: 11px;*/
+/*    -webkit-border-bottom-left-radius: 11px;*/
+/*    -moz-border-radius-bottomleft: 11px;*/
+/*    border-bottom-left-radius: 11px;*/
+/*}*/
+
+/*.range .irs-grid {*/
+/*    bottom: 22px;*/
+/*}*/
+
+/*.range .irs-grid .irs-grid-text {*/
+/*    display: none;*/
+/*}*/
+
+/*.range .irs-grid .irs-grid-pol {*/
+/*    height: 35px;*/
+/*    background-color: white;*/
+/*}*/
+
+/*.range .irs-grid .irs-grid-pol:first-of-type {*/
+/*    display: none;*/
+/*}*/
+
+/*.range .irs-grid .irs-grid-pol:nth-last-child(2) {*/
+/*    display: none;*/
+/*}*/
+
+/*.range .irs-slider {*/
+/*    top: 12px;*/
+/*    width: 47px;*/
+/*    height: 47px;*/
+/*    background-color: #44d29d;*/
+/*    border: 14px solid white;*/
+/*    -webkit-border-radius: 50%;*/
+/*    -moz-border-radius: 50%;*/
+/*    border-radius: 50%;*/
+/*    -webkit-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);*/
+/*    -moz-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);*/
+/*    box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.21);*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.range .irs-single {*/
+/*    top: -17px;*/
+/*    font-size: 15px;*/
+/*    line-height: 24px;*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*    background-color: transparent;*/
+/*}*/
+
+/*.range .irs-min,*/
+/*.range .irs-max {*/
+/*    top: -17px;*/
+/*    font-size: 15px;*/
+/*    line-height: 24px;*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*    background-color: transparent;*/
+/*}*/

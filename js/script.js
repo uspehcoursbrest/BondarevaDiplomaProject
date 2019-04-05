@@ -51,4 +51,47 @@ $(document).ready(function () {
 })
 
 
+$('#rangeSum').ionRangeSlider ({
+    grid: true,
+    min: 50,
+    max: 50000,
+    from: 500,
+    step: 100,
+    grid_num: 16,
+    grid_margin: false,
+    postfix: "$",
+    onStart: function (data) {
+        $('#radio').val(data.from);
+    },
+    onChange: function (data) {
+        $('#radio').val(data.from);
+    }
+});
+
+// var sumRange = $('#rangeSum').data('ionRangeSlider'),
+//     min = 50,
+//     max = 50000;
+//
+// $('#radio').on('change keyup', function () {
+//     var val = $(this).prop('value');
+//     if(val<min) {
+//         val = min;
+//     } else if (val>max) {
+//         val = max;
+//     }
+//     sumRange.update({
+//         from: val
+//     });
+// })
+// })
+//
+// $("#menuPart").tabs({
+//     active: 0
+// });
+//
+// $('select').selectric();
+
+
+
+
 
